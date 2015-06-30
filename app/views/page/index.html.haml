@@ -1,0 +1,10 @@
+.small-6.medium-centered.columns
+  <h3>ЯandomPerson. <small>generator. /stupidly simple/</small></h3>
+  %ul.vcard
+    %li.fn= FFaker::Name.name
+    %li.street-address= FFaker::Address.street_address
+    %li.locality= FFaker::Address.city
+    %li
+      %span.state= FFaker::AddressUS.state
+    %li
+      %span.zip= FFaker::AddressUS.zip_code
